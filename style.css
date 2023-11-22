@@ -56,6 +56,8 @@
     --subtitle1-font-size: 24px;
     --subtitle2-font-size: 20px;
     --p-font-size: 16px;
+
+    --text-font: "Rubik", sans-serif;
 }
 
 .page-content {
@@ -125,4 +127,35 @@
 
   .hand-emoji {
     padding-left: 3vh;
+  }
+
+  .contact {
+    grid-row-start: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+    background-color: var(--tertiary-70);
+    border-radius: 10vw;
+    min-height: 20vh;
+    font-size: var(--subtitle2-font-size);
+    padding-left: 4vw;
+    font-family: var(--text-font);
+    color: var(--shade-90);
+  }
+
+  .contact > a {
+    color: var(--shade-90);
+    text-decoration: none;
+  }
+
+  .skills {
+    grid-row-start: 2;
+    grid-column-start: 4;
+    grid-column-end: 8;
+    background-color: var(--primary-70);
+    border-radius: 10vw;
+    min-height: 20vh;
+    font-size: var(--subtitle2-font-size);
+    padding-left: 4vw;
+    font-family: var(--text-font);
+    color: var(--shade-90);
   }
