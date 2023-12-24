@@ -1,0 +1,231 @@
+:root {
+    /*colors*/
+    --primary-10: #FFA9BE;
+    --primary-20: #E6879E;
+    --primary-30: #CC657F;
+    --primary-40: #B3445F;
+    --primary-50: #992240;
+    --primary-55: #800020;
+    --primary-60: #66001A;
+    --primary-70: #4D0013;
+    --primary-80: #33000D;
+    --primary-90: #26000A;
+    --primary-100: #0D0003;
+
+    --secondary-10: #EEF6F1;
+    --secondary-20: #CDE5D5;
+    --secondary-30: #BCDCC7;
+    --secondary-40: #9ACAAB;
+    --secondary-50: #79B98F;
+    --secondary-55: #57a773;
+    --secondary-60: #46865C;
+    --secondary-70: #346445;
+    --secondary-80: #23432E;
+    --secondary-90: #1A3223;
+    --secondary-100: #09110C;
+
+    --tertiary-10: #F3F8FD;
+    --tertiary-20: #DBEAFA;
+    --tertiary-30: #CFE3F9;
+    --tertiary-40: #B6D5F5;
+    --tertiary-50: #9EC7F2;
+    --tertiary-55: #86B9EF;
+    --tertiary-60: #6D9CCD;
+    --tertiary-70: #547EAB;
+    --tertiary-80: #3B6188;
+    --tertiary-90: #224366;
+    --tertiary-100: #092644;
+
+    --shade-10: #101010;
+    --shade-20: #202020;
+    --shade-30: #303030;
+    --shade-40: #505050;
+    --shade-50: #606060;
+    --shade-60: #707070;
+    --shade-70: #909090;
+    --shade-80: #B0B0B0;
+    --shade-90: #CFCFCF;
+    --shade-100: #EFEFEF;
+
+    --background: #E3E7D3;
+    
+    /*font sizes*/
+    --h1-font-size: 64px;
+    --h2-font-size: 48px;
+    --h3-font-size: 32px;
+    --subtitle1-font-size: 24px;
+    --subtitle2-font-size: 20px;
+    --p-font-size: 16px;
+
+    --text-font: "Rubik", sans-serif;
+}
+
+.page-content {
+  display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.home {
+    grid-template-rows: auto 5vh auto;
+}
+
+.portfolio {
+    grid-template-rows: auto 1vh auto 5vh auto;
+}
+
+.text-primary {
+    font-family: Graduate, serif;
+    font-size: var(--h2-font-size);
+    color: var(--primary-40);
+    padding-left: 10%;
+}
+.text-secondary {
+    font-family: Rubik, sans-serif;
+    font-size: var(--h3-font-size);
+    color: var(--shade-20);
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.name-box {
+    background-color: var(--secondary-55);
+    border-radius: 10vw;
+    padding: 5px;
+    display:inline-grid;
+    min-width: 60%;
+    min-height: 98vh;
+    grid-column-start: 2;
+    grid-column-end: 7;
+}
+
+.body {
+    background-color: var(--tertiary-30);
+}
+  
+  .text-primary .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.1em;
+    padding-right: 0.05em;
+    padding-bottom: 0.15em;
+  }
+
+  .text-primary .line {
+    opacity: 0;
+    position: absolute;
+    left: 0;
+    height: 100%;
+    width: 3px;
+    background-color: #fff;
+    transform-origin: 0 50%;
+  }
+  
+  .text-primary .line1 { 
+    top: 0; 
+    left: 0;
+  }
+
+  .hi {
+    display: flex;
+    margin: 0 auto;
+    justify-content:left;
+    padding-left: 10%;
+    font-size: calc(var(--h1-font-size) * 1.75);
+  }
+
+  .myname {
+      display: flex;
+      justify-content: left;
+      text-align: left;
+      padding-left: 10%;
+  }
+
+  .text-wrapper {
+      justify-content: left;
+  }
+
+  .info  {
+      background-color: var(--primary-40);
+      border-radius: 10vw;
+      padding: 5px;
+      display:inline-grid;
+      min-width: 60%;
+      min-height: 98vh;
+      grid-column-start: 2;
+      grid-column-end: 7;
+      grid-row-start: 3;
+      grid-row-end: 4;
+  }
+
+
+  /*portfolio*/
+  .portfolio-header {
+      grid-column-start: 2;
+      grid-column-end: 8;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      font-size: var(--h2-font-size);
+      font-family: var(--text-font);
+  }
+
+
+  .portfolio-object {
+      padding-left: 5%;
+      padding-right: 5%;
+      padding-bottom: 5%;
+      border-radius: 2vw;
+  }
+
+  .po-title {
+      font-size: var(--h3-font-size);
+      font-family: var(--text-font);
+  }
+
+  .po-subtitle {
+      font-size: var(--subtitle2-font-size);
+      font-family: var(--text-font);
+      font-style: italic;
+
+  }
+
+  .po-description {
+      font-size: var(--p-font-size);
+      font-family: var(--text-font);
+  }
+
+  .po-info {
+      font-size: var(--subtitle2-font-size);
+      font-family: var(--text-font);
+      text-align: right;
+  }
+
+  .po-left {
+      grid-column-start: 2;
+      grid-column-end: 4;
+  }
+
+  .po-right {
+      grid-column-start: 5;
+      grid-column-end: 7;
+  }
+
+  .test1 {
+      background-color: var(--primary-40);
+      min-height: 200px;
+  }
+
+  .test2 {
+      background-color: var(--secondary-40);
+      min-height: 200px;
+
+  }
+
+  .row1 {
+      grid-row-start: 3;
+      grid-row-end: 4;
+  }
+
+  .row2 {
+      grid-row-start: 6;
+      grid-row-end: 7;
+  }
