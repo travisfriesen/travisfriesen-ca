@@ -66,11 +66,11 @@
 }
 
 .home {
-    grid-template-rows: auto 5vh auto 5vh auto;
+    grid-template-rows: auto 5vh auto 5vh auto 5vh auto;
 }
 
 .portfolio {
-    grid-template-rows: 0vh auto 1vh auto 5vh auto;
+    grid-template-rows: 0 auto 1vh auto 5vh auto;
 }
 
 .text-primary {
@@ -155,55 +155,10 @@
       grid-column-end: 7;
       grid-row-start: 3;
       grid-row-end: 4;
-      padding-left: 10%;
   }
 
-.info-header {
-    font-size: var(--h2-font-size);
-    font-family: var(--text-font);
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.contact-info {
-    font-family: var(--text-font);
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.link-group {
-    display: grid;
-    grid-template-columns: 12vw 2vw auto;
-}
-
-.link-group > h3 {
-    font-size: var(--h3-font-size);
-    grid-column-end: 2;
-
-}
-
-.link-group > a {
-    font-family: var(--text-font);
-    font-size: var(--subtitle2-font-size);
-    grid-column-start: 3;
-    justify-content: center;
-    align-items: center;
-}
-
-.info > h3 {
-    font-size: var(--h3-font-size);
-    font-family: var(--text-font);
-}
-
-.links {
-    font-family: var(--text-font);
-    font-size: var(--subtitle2-font-size);
-}
-
-
-
 .projects  {
-    background-color: var(--tertiary-55);
+    background-color: var(--tertiary-40);
     border-radius: 10vw;
     padding: 5px;
     display:inline-grid;
@@ -213,7 +168,10 @@
     grid-column-end: 7;
     grid-row-start: 5;
     grid-row-end: 6;
-    padding-left: 10%;
+}
+
+.projects-title {
+    
 }
 
 
@@ -241,6 +199,16 @@
   .po-title {
       font-size: var(--subtitle1-font-size);
       font-family: var(--text-font);
+  }
+
+  .return-home {
+      font-size: var(--subtitle2-font-size);
+      font-family: var(--text-font);
+      grid-column-start: 1;
+      grid-column-end: 2;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      margin: auto;
   }
 
   .po-subtitle {
@@ -279,6 +247,7 @@
   .po-links > a:link {
       color: var(--secondary-90);
       text-decoration: none;
+      font-style: italic;
   }
 
   .po-links > a:hover {
