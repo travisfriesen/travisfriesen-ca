@@ -155,6 +155,12 @@
       grid-column-end: 7;
       grid-row-start: 3;
       grid-row-end: 4;
+      font-family: var(--text-font);
+  }
+
+
+  .info-header {
+
   }
 
 .projects  {
@@ -168,10 +174,55 @@
     grid-column-end: 7;
     grid-row-start: 5;
     grid-row-end: 6;
+    font-family: var(--text-font)
 }
 
 .projects-title {
+    margin-left: 5vw;
+    font-size: var(--h1-font-size);
+    margin-top: auto;
     
+}
+
+.projects-skills {
+    display:flex;
+    justify-content: left;
+    margin-left: 5vw;
+}
+
+.projects-tools {
+    line-height: 1.5;
+}
+
+.projects-tools > h3 {
+    font-size: var(--h3-font-size);
+}
+
+.projects-languages > h3 {
+    font-size: var(--h3-font-size);
+}
+
+.projects-languages {
+    margin-left: 10vw;
+    line-height: 1.5;
+}
+
+.projects-indented {
+    margin-left: 3vw;
+}
+
+.projects-text {
+    display:flex;
+    justify-content: left;
+    margin-left: 2.5vw;
+    margin-top: 0;
+    margin-bottom: auto;
+    font-size: var(--subtitle1-font-size);
+}
+
+.projects-link {
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 
